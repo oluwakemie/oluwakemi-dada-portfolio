@@ -1,6 +1,6 @@
 import React from "react";
 import Work from "../../assets/work2.jpg";
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 const About = () => {
   return (
     <div className="border-b border-neutral-900 pb-4">

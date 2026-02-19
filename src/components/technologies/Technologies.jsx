@@ -1,7 +1,6 @@
 import React from "react";
 import { FaBugSlash } from "react-icons/fa6";
 import { LiaJenkins } from "react-icons/lia";
-import { RiNextjsFill } from "react-icons/ri";
 import { SiPostman } from "react-icons/si";
 import { FaGithub } from "react-icons/fa6";
 import { SiApachejmeter } from "react-icons/si";
@@ -9,7 +8,7 @@ import { SiCypress } from "react-icons/si";
 import { SiBurpsuite } from "react-icons/si";
 import { TbBrandJavascript } from "react-icons/tb";
 import { TbApi } from "react-icons/tb";
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const iconVariants = (duration) => ({
   initial: { y: -10 },
