@@ -35,22 +35,17 @@ const Home = () => {
               animate="visible"
               className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-4xl tracking-tight text-transparent"
             >
-              Frontend Developer & QA Tester
-            </motion.span>
+Quality Assurance Engineer            </motion.span>
             <motion.p
               variants={container(1)}
               initial="hidden"
               animate="visible"
               className="my-2 max-w-xl py-3 font-light tracking-tighter"
             >
-              A dedicated frontend developer and a skilled QA Tester with 2
-              years of hands-on experience in building responsive, user-friendly
-              and scalable web applications. Proficient in HTML, CSS,
-              JavaScript, and frameworks like React.js and Vue.js. and
-              Proficient in manual and automated testing techniques, Familiar
-              with tools like Selenium,JIRA and TestRail. Passionate about
-              continuous learning and staying up-to-date with the latest web
-              development trends and technologies.
+              A Dedicated Quality Assurance Engineer with 4 years of hands-on experience ensuring the delivery of reliable, scalable, and high-quality web applications. 
+              Proficient in both manual and automated testing, including functional, regression, integration, and API testing. Experienced with tools
+              such as Cypress, Postman, Jira, and Jmeter. Strong understanding of SDLC/STLC and Agile methodologies. 
+              Passionate about continuous improvement, quality standards, and staying up to date with evolving testing practices and technologies.
             </motion.p>
           </div>
           <div className="m-8 flex items-center justify-start gap-8 text-2xl">

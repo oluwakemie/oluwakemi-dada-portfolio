@@ -5,17 +5,19 @@ import Project4 from "../assets/project4.jpg";
 
 export const EXPERIENCES = [
   {
-    year: "2023",
-    role: "Frontend Developer (Internship)",
-    company: "Paylode Service Limited",
-    description: `I worked closely with designers to transform wireframes and mock-ups into functional web pages. It includes understanding the design principles and translating UI designs into code.
-                I write and maintain existing code using HTML,CSS and JavaScript.
-                 Adhering to best practices ensure that the codebase remains organized and easy to debug.`,
-    technologies: ["HTML", "CSS", "JavaScript", "Tailwind CSS", "ReactJs"],
+    year: "2025 - Present",
+    role: "Quality Assurance Engineer",
+    company: "SPROXIL",
+    description: `Design and execute manual and automated test cases for web applications.
+                Perform functional, regression, and integration testing
+                Validate UI implementation against product requirements and designs.
+                Identify, document, and track defects to resolution.
+                Collaborate with developers and product teams to improve release quality.`,
+    technologies: ["SDLC", "Agile Methodologies","API Testing", "Postman", "JMeter", "SQL", "Jira", "Git", "Jenkins", "CI/CD", "Owasp ZAP"],
   },
   {
-    year: "2023 - Present",
-    role: "Junior Frontend Developer",
+    year: "2023 - 2024",
+    role: "Frontend Developer(Internship)",
     company: "Paylode Service Limited",
     description: `I developed and maintained frontend components and features for a payment gateway platform used by more than 20 merchants in Nigeria. 
     Collaborated with backend developers and designers to implement UI/UX designs and ensure seamless integration with backend systems.
@@ -31,8 +33,25 @@ export const EXPERIENCES = [
     ],
   },
   {
-    year: "2024",
-    role: "Software Tester Internship",
+    year: "2022 - 2024",
+    role: "Software Tester",
+    company: "Paylode Service Limited",
+    description: `I developed and maintained frontend components and features for a payment gateway platform used by more than 20 merchants in Nigeria. 
+    Collaborated with backend developers and designers to implement UI/UX designs and ensure seamless integration with backend systems.
+     Used React.js, HTML5, CSS3, JavaScript, Next Js and React Js to build interactive and performant user interfaces. Contributed to the selection and implementation of frontend frameworks, significantly enhancing project workflow.
+     I implemented the best practices to ensure code quality and maintaining it.
+    `,
+    technologies: [
+      "JavaScript",
+      "Tailwind CSS",
+      "React.Js",
+      "Next.Js",
+      "FIREBASE",
+    ],
+  },
+  {
+    year: "2021 - 2024(Contract)",
+    role: "Software Tester",
     company: "EAGLECREST",
     description: `Detected and reported software defects and provided detailed bug reports to
     developers
@@ -40,7 +59,7 @@ export const EXPERIENCES = [
     Developed test plans and test cases for user acceptance testing to ensure the
     software met customer requirements.
     `,
-    technologies: ["AGILE METHODOLOGIES", "SELENIUM", "Bug Reporting Tool"],
+    technologies: [ "SDLC", "Agile Methodologies", "API Testing", "Jira", "" ],
   },
 ];
 
@@ -83,5 +102,5 @@ export const PROJECTS = [
 export const CONTACT = {
   address: " Ikeja Lagos State, Nigeria. ",
   phoneNo: " +234 81 0435 7439 , +234 80 7953 4994",
-  email: "Oluwakemie05gmail.com",
+  email: "Oluwakemi.dada37@gmail.com",
 };

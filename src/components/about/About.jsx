@@ -26,15 +26,11 @@ const About = () => {
         >
           <div className="flex justify-center lg:justify-start">
             <p className="my-2 max-w-xl py-6">
-              I am a graduate of Computer Science and I have a strong background
-              of Information Technology. I'm a frontend developer and software
-              tester with a passion for creating intuitive and visually
-              appealing user interfaces. My expertise lies in crafting
-              responsive, efficient, and user-friendly web applications. As a
-              software tester, I ensure that every application I work on meets
-              high standards of quality and performance through meticulous
-              testing and attention to detail. I’m dedicated to delivering
-              seamless and robust solution that enhance user experiences{" "}
+            I am a Computer Science graduate with over 4 years of experience in Quality Assurance. 
+            I specialize in ensuring the delivery of reliable, high-performing, and user-centered web applications. 
+            My expertise spans manual and automated testing, including functional, regression, integration, and API testing. 
+            I am committed to maintaining high quality standards through structured testing processes, attention to detail, and continuous improvement.
+            My goal is to deliver stable and seamless digital solutions that enhance user experience and business value.{" "}
             </p>
           </div>
         </motion.div>

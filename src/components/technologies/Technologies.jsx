@@ -1,13 +1,13 @@
 import React from "react";
-import { RiReactjsLine } from "react-icons/ri";
-import { RiTailwindCssFill } from "react-icons/ri";
+import { FaBugSlash } from "react-icons/fa6";
+import { LiaJenkins } from "react-icons/lia";
 import { RiNextjsFill } from "react-icons/ri";
-import { RiVuejsFill } from "react-icons/ri";
+import { SiPostman } from "react-icons/si";
 import { FaGithub } from "react-icons/fa6";
-import { FaCss3Alt } from "react-icons/fa";
-import { SiTypescript } from "react-icons/si";
-import { RiFirebaseFill } from "react-icons/ri";
-import { SiSelenium } from "react-icons/si";
+import { SiApachejmeter } from "react-icons/si";
+import { SiCypress } from "react-icons/si";
+import { SiBurpsuite } from "react-icons/si";
+import { TbBrandJavascript } from "react-icons/tb";
 import { TbApi } from "react-icons/tb";
 import { delay, motion } from "framer-motion";
 
@@ -47,7 +47,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <RiReactjsLine className="text-7xl text-cyan-400" />
+          <FaBugSlash className="text-7xl text-cyan-400" />
         </motion.div>
         <motion.div
           variants={iconVariants(3)}
@@ -55,23 +55,16 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <RiTailwindCssFill className="text-7xl text-cyan-400" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(2)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <RiNextjsFill className="text-7xl " />
+       
+          {/* <RiNextjsFill className="text-7xl " />
         </motion.div>
         <motion.div
           variants={iconVariants(6)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <FaCss3Alt className="text-7xl text-red-700" />
+        > */}
+          <SiApachejmeter className="text-7xl text-red-700" />
         </motion.div>
         <motion.div
           variants={iconVariants(4)}
@@ -79,7 +72,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <SiSelenium className="text-7xl text-green-400" />
+          <TbBrandJavascript className="text-7xl text-green-400" />
         </motion.div>
         <motion.div
           variants={iconVariants(3)}
@@ -87,7 +80,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <RiVuejsFill className="text-7xl text-green-600" />
+          <SiPostman className="text-7xl text-green-600" />
         </motion.div>
         <motion.div
           variants={iconVariants(2.5)}
@@ -111,15 +104,22 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <SiTypescript className="text-7xl text-cyan-400" />
+          <SiCypress className="text-7xl text-cyan-400" />
         </motion.div>
         <motion.div
           variants={iconVariants(6)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
+        >   <LiaJenkins className="text-7xl text-cyan-400" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(2)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <RiFirebaseFill className="text-7xl text-yellow-400" />
+          <SiBurpsuite className="text-7xl text-yellow-400" />
         </motion.div>
       </motion.div>
     </div>

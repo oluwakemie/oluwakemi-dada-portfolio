@@ -3,6 +3,7 @@ import logo from "../../assets/kemmylogo.png";
 import { Link } from "react-router-dom";
 import { RiHomeHeartFill } from "react-icons/ri";
 import { IoWomanSharp } from "react-icons/io5";
+import { FaFolderOpen } from "react-icons/fa6";
 import { GrTechnology } from "react-icons/gr";
 import { IoMdContacts } from "react-icons/io";
 import { MdWork } from "react-icons/md";
@@ -29,9 +30,13 @@ const Navbar = () => {
           {" "}
           <GrTechnology />
         </Link>
-        <Link to="/project" className="hover:text-purple-500">
+        <Link to="/experience" className="hover:text-purple-500">
           {" "}
           <MdWork />
+        </Link>
+        <Link to="/project" className="hover:text-purple-500">
+          {" "}
+          <FaFolderOpen />
         </Link>
 
         <Link to="/contact" className="hover:text-purple-500">
@@ -60,6 +65,9 @@ const Navbar = () => {
         </li>
         <li className="list-none w-full text-center p-4 hover:bg-neutral-900 hover:text-white transition-all cursor-pointer">
         <Link to="/technology">Technology</Link> 
+        </li>
+        <li className="list-none w-full text-center p-4 hover:bg-neutral-900 hover:text-white transition-all cursor-pointer">
+        <Link to="/experience">Experience</Link> 
         </li>
         <li className="list-none w-full text-center p-4 hover:bg-neutral-900 hover:text-white transition-all cursor-pointer">
         <Link to="/project">Projects</Link> 
