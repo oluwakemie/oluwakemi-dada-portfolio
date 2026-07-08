@@ -1,9 +1,18 @@
+import { StaticImageData } from "next/image";
 import Project1 from "../assets/project1.jpg";
 import Project2 from "../assets/project2.jpg";
 import Project3 from "../assets/project3.jpg";
 import Project4 from "../assets/project4.jpg";
 
-export const EXPERIENCES = [
+export interface Experience {
+  year: string;
+  role: string;
+  company: string;
+  description: string;
+  technologies: string[];
+}
+
+export const EXPERIENCES: Experience[] = [
   {
     year: "2025 - Present",
     role: "Quality Assurance Engineer",
@@ -19,7 +28,7 @@ export const EXPERIENCES = [
     year: "2023 - 2024",
     role: "Frontend Developer(Internship)",
     company: "Paylode Service Limited",
-    description: `I developed and maintained frontend components and features for a payment gateway platform used by more than 20 merchants in Nigeria. 
+    description: `I developed and maintained frontend components and features for a payment gateway platform used by more than 20 merchants in Nigeria.
     Collaborated with backend developers and designers to implement UI/UX designs and ensure seamless integration with backend systems.
      Used React.js, HTML5, CSS3, JavaScript, Next Js and React Js to build interactive and performant user interfaces. Contributed to the selection and implementation of frontend frameworks, significantly enhancing project workflow.
      I implemented the best practices to ensure code quality and maintaining it.
@@ -36,7 +45,7 @@ export const EXPERIENCES = [
     year: "2022 - 2024",
     role: "Software Tester",
     company: "Paylode Service Limited",
-    description: `I developed and maintained frontend components and features for a payment gateway platform used by more than 20 merchants in Nigeria. 
+    description: `I developed and maintained frontend components and features for a payment gateway platform used by more than 20 merchants in Nigeria.
     Collaborated with backend developers and designers to implement UI/UX designs and ensure seamless integration with backend systems.
      Used React.js, HTML5, CSS3, JavaScript, Next Js and React Js to build interactive and performant user interfaces. Contributed to the selection and implementation of frontend frameworks, significantly enhancing project workflow.
      I implemented the best practices to ensure code quality and maintaining it.
@@ -63,7 +72,14 @@ export const EXPERIENCES = [
   },
 ];
 
-export const PROJECTS = [
+export interface Project {
+  title: string;
+  image: StaticImageData;
+  description: string;
+  technologies: string[];
+}
+
+export const PROJECTS: Project[] = [
   {
     title: "Trabook",
     image: Project1,
@@ -99,6 +115,7 @@ export const PROJECTS = [
     ],
   },
 ];
+
 export const CONTACT = {
   address: " Ikeja Lagos State, Nigeria. ",
   phoneNo: " +234 81 0435 7439 , +234 80 7953 4994",

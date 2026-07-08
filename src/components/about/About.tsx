@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Work from "../../assets/work2.jpg";
 import { motion } from "framer-motion";
@@ -15,7 +16,7 @@ const About = () => {
           className="w-full lg:w-1/2 lg:p-8"
         >
           <div className="flex items-center justify-center">
-            <img className="rounded-2xl " src={Work} alt="work done" />
+            <img className="rounded-2xl " src={Work.src} alt="work done" />
           </div>
         </motion.div>
         <motion.div
@@ -26,9 +27,9 @@ const About = () => {
         >
           <div className="flex justify-center lg:justify-start">
             <p className="my-2 max-w-xl py-6">
-            I am a Computer Science graduate with over 4 years of experience in Quality Assurance. 
-            I specialize in ensuring the delivery of reliable, high-performing, and user-centered web applications. 
-            My expertise spans manual and automated testing, including functional, regression, integration, and API testing. 
+            I am a Computer Science graduate with over 4 years of experience in Quality Assurance.
+            I specialize in ensuring the delivery of reliable, high-performing, and user-centered web applications.
+            My expertise spans manual and automated testing, including functional, regression, integration, and API testing.
             I am committed to maintaining high quality standards through structured testing processes, attention to detail, and continuous improvement.
             My goal is to deliver stable and seamless digital solutions that enhance user experience and business value.{" "}
             </p>

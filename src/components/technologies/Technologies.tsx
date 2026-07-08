@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { FaBugSlash } from "react-icons/fa6";
 import { LiaJenkins } from "react-icons/lia";
@@ -10,7 +11,7 @@ import { TbBrandJavascript } from "react-icons/tb";
 import { TbApi } from "react-icons/tb";
 import { motion } from "framer-motion";
 
-const iconVariants = (duration) => ({
+const iconVariants = (duration: number) => ({
   initial: { y: -10 },
   animate: {
     y: [10, -10],
@@ -18,7 +19,7 @@ const iconVariants = (duration) => ({
       duration: duration,
       ease: "linear",
       repeat: Infinity,
-      repeatType: "reverse",
+      repeatType: "reverse" as const,
     },
   },
 });
@@ -54,7 +55,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-       
+
           {/* <RiNextjsFill className="text-7xl " />
         </motion.div>
         <motion.div

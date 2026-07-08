@@ -1,6 +1,7 @@
+"use client";
 import React, { useState } from "react";
+import Link from "next/link";
 import logo from "../../assets/kemmylogo.png";
-import { Link } from "react-router-dom";
 import { RiHomeHeartFill } from "react-icons/ri";
 import { IoWomanSharp } from "react-icons/io5";
 import { FaFolderOpen } from "react-icons/fa6";
@@ -17,29 +18,29 @@ const Navbar = () => {
   return (
     <nav className=" flex items-center justify-between mt-3">
       <div className="flex flex-shrink-0 items-center">
-        <img src={logo} alt="" className="w-20 mx-2" />
+        <img src={logo.src} alt="" className="w-20 mx-2" />
       </div>
       <div className=" hidden m-8 lg:flex items-center justify-end gap-8 text-2xl cursor-pointer">
-        <Link to="/" className="hover:text-purple-500">
+        <Link href="/" className="hover:text-purple-500">
           <RiHomeHeartFill />
         </Link>
-        <Link to="/about" className="hover:text-purple-500">
+        <Link href="/about" className="hover:text-purple-500">
           <IoWomanSharp />{" "}
         </Link>
-        <Link to="/technology" className="hover:text-purple-500">
+        <Link href="/technology" className="hover:text-purple-500">
           {" "}
           <GrTechnology />
         </Link>
-        <Link to="/experience" className="hover:text-purple-500">
+        <Link href="/experience" className="hover:text-purple-500">
           {" "}
           <MdWork />
         </Link>
-        <Link to="/project" className="hover:text-purple-500">
+        <Link href="/project" className="hover:text-purple-500">
           {" "}
           <FaFolderOpen />
         </Link>
 
-        <Link to="/contact" className="hover:text-purple-500">
+        <Link href="/contact" className="hover:text-purple-500">
           <IoMdContacts />
         </Link>
       </div>
@@ -57,23 +58,23 @@ const Navbar = () => {
         } absolute z-50 lg:hidden top-10 right-0 max-w-[300px] w-full bg-black bg-opacity-100 flex flex-col items-center  gap-6 font-semibold transform transition-transform`}
       >
         <li className="list-none w-full text-center p-4 hover:bg-neutral-900 hover:text-white transition-all cursor-pointer">
-          <Link to="/">Home</Link> 
+          <Link href="/">Home</Link>
         </li>
 
         <li className="list-none w-full text-center p-4 hover:bg-neutral-900 hover:text-white transition-all cursor-pointer">
-        <Link to="/about">About Me</Link> 
+        <Link href="/about">About Me</Link>
         </li>
         <li className="list-none w-full text-center p-4 hover:bg-neutral-900 hover:text-white transition-all cursor-pointer">
-        <Link to="/technology">Technology</Link> 
+        <Link href="/technology">Technology</Link>
         </li>
         <li className="list-none w-full text-center p-4 hover:bg-neutral-900 hover:text-white transition-all cursor-pointer">
-        <Link to="/experience">Experience</Link> 
+        <Link href="/experience">Experience</Link>
         </li>
         <li className="list-none w-full text-center p-4 hover:bg-neutral-900 hover:text-white transition-all cursor-pointer">
-        <Link to="/project">Projects</Link> 
+        <Link href="/project">Projects</Link>
         </li>
         <li className="list-none w-full text-center p-4 hover:bg-neutral-900 hover:text-white transition-all cursor-pointer">
-        <Link to="/contact">Contact Us</Link> 
+        <Link href="/contact">Contact Us</Link>
         </li>
       </div>
     </nav>

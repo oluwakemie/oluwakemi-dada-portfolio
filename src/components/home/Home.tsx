@@ -1,12 +1,13 @@
+"use client";
 import React from "react";
+import Link from "next/link";
 import Profile from "../../assets/abour.jpg";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 
-const container = (delay) => ({
+const container = (delay: number) => ({
   hidden: { x: -100, opacity: 0 },
   visible: {
     x: 0,
@@ -42,20 +43,20 @@ Quality Assurance Engineer            </motion.span>
               animate="visible"
               className="my-2 max-w-xl py-3 font-light tracking-tighter"
             >
-              A Dedicated Quality Assurance Engineer with 4 years of hands-on experience ensuring the delivery of reliable, scalable, and high-quality web applications. 
+              A Dedicated Quality Assurance Engineer with 4 years of hands-on experience ensuring the delivery of reliable, scalable, and high-quality web applications.
               Proficient in both manual and automated testing, including functional, regression, integration, and API testing. Experienced with tools
-              such as Cypress, Postman, Jira, and Jmeter. Strong understanding of SDLC/STLC and Agile methodologies. 
+              such as Cypress, Postman, Jira, and Jmeter. Strong understanding of SDLC/STLC and Agile methodologies.
               Passionate about continuous improvement, quality standards, and staying up to date with evolving testing practices and technologies.
             </motion.p>
           </div>
           <div className="m-8 flex items-center justify-start gap-8 text-2xl">
-            <Link to="https://www.linkedin.com/in/oluwakemiesther/">
+            <Link href="https://www.linkedin.com/in/oluwakemiesther/">
               <FaLinkedin />
             </Link>
-            <Link to="https://github.com/oluwakemie">
+            <Link href="https://github.com/oluwakemie">
             <FaGithub />
             </Link>
-           
+
             <FaInstagram />
           </div>
         </div>
@@ -65,7 +66,7 @@ Quality Assurance Engineer            </motion.span>
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 1.2 }}
-              src={Profile}
+              src={Profile.src}
               alt="Kemmie"
             />
           </div>

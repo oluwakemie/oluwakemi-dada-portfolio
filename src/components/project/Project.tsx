@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { PROJECTS } from "../../constants";
 import { motion } from "framer-motion";
@@ -22,10 +23,9 @@ const Project = () => {
               className="w-full lg:w-1/2"
             >
               <img
-                src={project.image}
+                src={project.image.src}
                 alt={project.title}
                 className="mb-6"
-                rounded-5
               />
             </motion.div>
             <motion.div
