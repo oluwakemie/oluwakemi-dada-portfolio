@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 
 export const metadata: Metadata = {
+	metadataBase: new URL("https://www.oluwakemidada.com"),
 	title: "Oluwakemi Dada | QA Engineer - Playwright, Automation & API Testing",
 	description:
 		"Oluwakemi Dada is a QA Engineer with 4+ years delivering end-to-end product quality across web, mobile, and API layers, specializing in Playwright automation, API testing, and regression strategy. Based in Lagos, Nigeria, open to remote and global opportunities.",
@@ -11,8 +12,20 @@ export const metadata: Metadata = {
 		description:
 			"QA Engineer with 4+ years delivering end-to-end product quality across web, mobile, and API layers. Open to remote and global opportunities.",
 		type: "website",
-		url: "https://kemmiy-portfolio.vercel.app/",
-		images: ["https://kemmiy-portfolio.vercel.app/kemi.jpg"],
+		url: "https://www.oluwakemidada.com/",
+		images: [
+			{
+				url: "/og-image.jpg",
+				width: 1200,
+				height: 630,
+				alt: "Oluwakemi Dada, QA Engineer",
+			},
+		],
+	},
+	twitter: {
+		card: "summary_large_image",
+		title: "Oluwakemi Dada | QA Engineer",
+		images: ["/og-image.jpg"],
 	},
 	icons: {
 		icon: "/favicon.ico",
@@ -31,7 +44,7 @@ const jsonLd = {
 	"@context": "https://schema.org",
 	"@type": "Person",
 	name: "Oluwakemi Dada",
-	url: "https://kemmiy-portfolio.vercel.app",
+	url: "https://www.oluwakemidada.com",
 	jobTitle: "QA Engineer",
 	knowsAbout: [
 		"Playwright",
