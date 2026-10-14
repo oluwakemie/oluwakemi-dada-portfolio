@@ -8,12 +8,12 @@ export interface Experience {
 
 export const EXPERIENCES: Experience[] = [
   {
-    year: "Dec 2024 - Present",
+    year: "Jan 2025 - Present",
     role: "Quality Assurance Engineer",
     company: "Sproxil",
     location: "Ikeja, Lagos",
     bullets: [
-      "Owned end-to-end QA for multiple survey and product verification platforms across functional, regression, and integration testing.",
+      "Own end-to-end QA across 8+ Sproxil products, including supply-chain traceability, survey platforms, WhatsApp conversational AI, call centre systems, and mobile field data collection.",
       "Built Playwright + TypeScript end-to-end frameworks from scratch for two products (Page Object Model, custom auth fixtures), including a 43-test suite running in GitHub Actions.",
       "Set up the team's shared QA automation repository: one GitHub Actions workflow for every product, environment-based test runs, and CI secrets scoped to the product that needs them.",
       "Led test execution for the PULSE Survey Builder, designing 200+ test cases covering conditional logic, pagination, checkbox grids, and question type variations, catching critical flow defects before launch.",
@@ -28,7 +28,7 @@ export const EXPERIENCES: Experience[] = [
   {
     year: "Mar 2022 - Sep 2024",
     role: "Software Tester",
-    company: "Eaglecrest Technologies",
+    company: "Eaglecrest Technologies (a Paylode company)",
     location: "Ikeja, Lagos",
     bullets: [
       "Delivered functional, sanity, stress, performance, and scalability testing for web and mobile applications across SME and enterprise clients.",
@@ -37,6 +37,16 @@ export const EXPERIENCES: Experience[] = [
       "Leveraged Playwright and Cypress for automating critical regression flows, reducing manual test time on key release cycles.",
       "Performed root-cause analysis on defects and collaborated with developers to reproduce, document, and track issues to resolution.",
       "Participated in Agile sprint ceremonies and maintained test cycle pace within sprint timelines without compromising coverage.",
+    ],
+  },
+  {
+    year: "Mar 2022 - Oct 2024",
+    role: "Frontend Developer (Intern)",
+    company: "Paylode Services Limited",
+    location: "Lagos",
+    bullets: [
+      "Maintained frontend components and features for a payment gateway platform used by more than 50 merchants in Nigeria.",
+      "Collaborated with senior developers and designers to implement UI/UX designs and ensure seamless integration with backend systems.",
     ],
   },
 ];
@@ -87,6 +97,19 @@ export const PROJECTS: Project[] = [
     ],
     technologies: ["Playwright", "API Testing", "Regression Testing"],
   },
+  {
+    title: "Public QA Work Samples",
+    company: "Personal portfolio",
+    year: "Ongoing",
+    bullets: [
+      "Cypress end-to-end tests using the Page Object Model for login, payment and transaction flows, with HTML reports and run recordings.",
+      "Paystack API test suite in Postman covering transaction initialisation, verification, webhook validation and negative scenarios.",
+      "JMeter performance test plan, summary report and HTML dashboard covering response times, throughput, error rates and percentiles.",
+      "Manual functional and regression test cases for a logistics web application.",
+    ],
+    technologies: ["Cypress", "Postman", "JMeter", "Test Design"],
+    link: { label: "View on GitHub", url: "https://github.com/oluwakemie/QA_portfolio" },
+  },
 ];
 
 export interface Certification {
@@ -99,6 +122,7 @@ export const CERTIFICATIONS: Certification[] = [
   { title: "The Complete 2024 Software Testing Bootcamp", issuer: "Udemy" },
   { title: "API Crash Course: How to Create, Test & Document APIs", issuer: "Udemy" },
   { title: "Playwright with TypeScript: Zero to Hero", issuer: "Udemy", status: "In Progress" },
+  { title: "Web Security Testing Fundamentals", issuer: "Cisco" },
   { title: "Soft Skills Course Certificate", issuer: "Jobberman" },
 ];
 
@@ -117,7 +141,12 @@ export const EDUCATION: EducationItem[] = [
   {
     degree: "HND in Computer Science",
     school: "Federal Polytechnic Ilaro, Ogun State",
-    year: "Sep 2019 - Nov 2021",
+    year: "Sep 2019 - Dec 2021",
+  },
+  {
+    degree: "ND in Computer Science",
+    school: "Federal Polytechnic Ilaro, Ogun State",
+    year: "Sep 2016 - Nov 2018",
   },
 ];
 
