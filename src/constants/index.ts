@@ -62,6 +62,19 @@ export interface Project {
 }
 
 export const PROJECTS: Project[] = [
+    {
+    title: "Stacks: Playwright E2E Suite",
+    company: "Personal project (open source)",
+    year: "2026",
+    bullets: [
+      "Built a 43-test Playwright + TypeScript suite for a library catalogue web app, covering registration, login, dashboard filtering, navigation guards and a full user journey.",
+      "Structured with the Page Object Model and a shared-session setup project, so authenticated tests skip the login form while register and login tests run with no session.",
+      "Runs in GitHub Actions on every push and weekly, with the HTML test report published to GitHub Pages.",
+      "Diagnosed a flaky logout test with Playwright traces and fixed it with a targeted wait instead of a global timeout increase.",
+    ],
+    technologies: ["Playwright", "TypeScript", "GitHub Actions", "POM"],
+    link: { label: "View code and live report", url: "https://github.com/oluwakemie/stacks-playwright-e2e" },
+  },
   {
     title: "Routely Shipping Platform",
     company: "Routely",
