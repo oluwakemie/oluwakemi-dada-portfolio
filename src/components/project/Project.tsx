@@ -69,6 +69,18 @@ const Project = () => {
                   </dd>
                 </div>
               </dl>
+
+              {project.link ? (
+                <a
+                  href={project.link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-8 inline-flex items-center gap-2 rounded-full border border-coral/60 px-4 py-2 font-sans text-sm text-coral transition-colors hover:bg-coral hover:text-cream focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-coral"
+                >
+                  {project.link.label}
+                  <span aria-hidden="true">&rarr;</span>
+                </a>
+              ) : null}
             </div>
 
             <div className="lg:pl-10">

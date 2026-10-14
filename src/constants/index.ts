@@ -14,12 +14,15 @@ export const EXPERIENCES: Experience[] = [
     location: "Ikeja, Lagos",
     bullets: [
       "Owned end-to-end QA for multiple survey and product verification platforms across functional, regression, and integration testing.",
+      "Built Playwright + TypeScript end-to-end frameworks from scratch for two products (Page Object Model, custom auth fixtures), including a 43-test suite running in GitHub Actions.",
+      "Set up the team's shared QA automation repository: one GitHub Actions workflow for every product, environment-based test runs, and CI secrets scoped to the product that needs them.",
       "Led test execution for the PULSE Survey Builder, designing 200+ test cases covering conditional logic, pagination, checkbox grids, and question type variations, catching critical flow defects before launch.",
+      "Found and documented high-impact defects, including a race condition that broke survey creation in about 83% of attempts and a delete action that never reached the server.",
+      "Traced intermittent test failures to a concurrency limit in the test environment using trace analysis and controlled re-runs, making the automated suite reliable.",
+      "Designed requirement-based test suites from PRDs, including a 270-case API test plan covering authentication, role-based access, validation, and security edge cases.",
+      "Wrote the QA automation architecture proposal (repository strategy, CI/CD, test data, and ownership) for the CTO and engineering team.",
       "Built and maintained a Postman collection of 50+ API tests validating authentication, data integrity, and error handling across REST endpoints.",
-      "Initiated a Playwright automation framework for regression coverage, authoring scripts using the Page Object Model (POM) pattern for repeatable, maintainable test execution.",
-      "Performed backend data validation via developer tools, application logs, and API endpoints to verify response accuracy with zero data corruption.",
-      "Produced all QA deliverables per release: test plans, test case documents, defect reports, regression reports, and final QA sign-off.",
-      "Coordinated 3 manual testers, improving team test coverage and accelerating release confidence across parallel workstreams.",
+      "Coordinated 3 manual testers and produced all QA deliverables per release: test plans, test cases, defect reports, regression reports, and QA sign-off.",
     ],
   },
   {
@@ -44,6 +47,8 @@ export interface Project {
   year: string;
   bullets: string[];
   technologies: string[];
+  /** Optional proof a recruiter can open: a GitHub repo, sample report, or case study. */
+  link?: { label: string; url: string };
 }
 
 export const PROJECTS: Project[] = [
@@ -53,7 +58,7 @@ export const PROJECTS: Project[] = [
     year: "2025",
     bullets: [
       "Delivered a full QA test suite for a multi-modal logistics SaaS platform covering Authentication, Shipment Creation, Payment, Tracking, Address System, and RoutelyOne (7 sub-modules).",
-      "Authored 100+ test cases including edge cases, negative paths, and OWASP Mobile Top 10 security test scenarios for web and mobile.",
+      "Authored 100+ test cases including edge cases, negative paths, and security scenarios, with OWASP Mobile Top 10 checks for the mobile app.",
       "Built Playwright automation scripts for end-to-end shipment creation flows across intracity, interstate, and international routes, executed in CI on every deployment.",
       "Executed API endpoint testing across 10 critical endpoints via Postman, achieving p95 response times under 500ms and a 0% error rate under 100 concurrent users.",
       "Produced 6 QA deliverables: functional test cases, bug/defect report, performance report (HTML), usability feedback, regression report, and final QA sign-off.",
