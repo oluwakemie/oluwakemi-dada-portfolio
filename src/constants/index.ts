@@ -134,9 +134,60 @@ export interface Certification {
 export const CERTIFICATIONS: Certification[] = [
   { title: "The Complete 2024 Software Testing Bootcamp", issuer: "Udemy" },
   { title: "API Crash Course: How to Create, Test & Document APIs", issuer: "Udemy" },
+  { title: "ISTQB Certified Tester Foundation Level (CTFL) v4.0", issuer: "ISTQB", status: "In Progress" },
   { title: "Playwright with TypeScript: Zero to Hero", issuer: "Udemy", status: "In Progress" },
   { title: "Web Security Testing Fundamentals", issuer: "Cisco" },
   { title: "Soft Skills Course Certificate", issuer: "Jobberman" },
+];
+
+export interface Service {
+  title: string;
+  summary: string;
+  includes: string[];
+  delivery: string;
+  bestFor: string;
+}
+
+export const SERVICES: Service[] = [
+  {
+    title: "Launch QA Check",
+    summary:
+      "A complete quality review of your website or web app before it goes live, so your users don't find the bugs first.",
+    includes: [
+      "Core user journeys: sign-up, login, forms, checkout and payments",
+      "Cross-browser and mobile-responsive checks",
+      "Broken links, validation, error states and edge cases",
+      "Basic performance and security checks",
+      "Prioritised bug report with screenshots and steps to reproduce",
+    ],
+    delivery: "3–5 days",
+    bestFor: "Startups and small businesses about to launch or relaunch",
+  },
+  {
+    title: "Test Automation Setup",
+    summary:
+      "A Playwright + TypeScript test suite for your most important flows, running automatically on every release.",
+    includes: [
+      "Automated end-to-end tests for your critical user journeys",
+      "Page Object Model structure your developers can maintain",
+      "GitHub Actions pipeline with HTML test reports",
+      "Handover session and documentation",
+    ],
+    delivery: "1–3 weeks",
+    bestFor: "Product teams releasing often with no automated regression",
+  },
+  {
+    title: "API & Performance Testing",
+    summary:
+      "Confidence that your backend returns the right data, rejects bad requests and holds up under real traffic.",
+    includes: [
+      "API test suite in Postman or Playwright",
+      "Authentication, role-based access and validation coverage",
+      "Load testing with k6 or JMeter, with a results report",
+    ],
+    delivery: "1–2 weeks",
+    bestFor: "Teams with public APIs, payment flows or traffic spikes",
+  },
 ];
 
 export interface EducationItem {

@@ -63,8 +63,8 @@ const Contact = () => {
 						<span className="text-coral">together.</span>
 					</h2>
 					<p className="mt-6 max-w-md text-xl font-light leading-relaxed text-forest-light sm:text-2xl">
-						Open to QA Engineer roles, remote, hybrid, or on-site,
-						anywhere in the world.
+						Open to QA Engineer roles (remote, hybrid or on-site,
+						anywhere in the world) and freelance QA projects.
 					</p>
 
 					<div className="mt-9 flex flex-wrap items-center gap-5">
