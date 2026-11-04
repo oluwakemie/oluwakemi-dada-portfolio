@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { HiOutlineCheck } from "react-icons/hi2";
+import { HiOutlineCheck, HiOutlineEnvelope } from "react-icons/hi2";
 import { FaWhatsapp } from "react-icons/fa";
 import { CONTACT, SERVICES } from "../../constants";
 
@@ -90,21 +90,23 @@ const Services = () => {
 							</div>
 						</dl>
 
-						<div className="mt-8 flex flex-wrap items-center gap-4">
+						<div className="mt-8 flex flex-wrap items-center gap-3">
+							<a
+								href={enquiry(service.title)}
+								className="inline-flex items-center justify-center gap-2 rounded-full bg-coral px-5 py-2.5 font-sans text-sm text-cream transition-colors hover:bg-coral-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-coral"
+							>
+								<HiOutlineEnvelope className="text-base" />
+								Get a quote
+							</a>
 							<a
 								href={whatsapp(service.title)}
 								target="_blank"
 								rel="noopener noreferrer"
-								className="inline-flex items-center justify-center gap-2 rounded-full bg-coral px-5 py-2.5 font-sans text-sm text-cream transition-colors hover:bg-coral-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-coral"
+								aria-label={`Chat on WhatsApp about ${service.title}`}
+								title="Chat on WhatsApp"
+								className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-cream/20 text-xl text-cream transition-colors hover:border-[#25D366] hover:bg-[#25D366] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#25D366]"
 							>
-								<FaWhatsapp className="text-base" />
-								Get a quote
-							</a>
-							<a
-								href={enquiry(service.title)}
-								className="font-sans text-sm text-cream/60 underline underline-offset-4 transition-colors hover:text-coral"
-							>
-								or email
+								<FaWhatsapp />
 							</a>
 						</div>
 						</div>
