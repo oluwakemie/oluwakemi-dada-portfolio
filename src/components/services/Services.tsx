@@ -1,10 +1,17 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { HiOutlineCheck, HiOutlineEnvelope } from "react-icons/hi2";
+import { HiOutlineCheck } from "react-icons/hi2";
+import { FaWhatsapp } from "react-icons/fa";
 import { CONTACT, SERVICES } from "../../constants";
 
 const Services = () => {
+	const whatsappNumber = CONTACT.phoneNo.replace(/\D/g, "");
+	const whatsapp = (title: string) =>
+		`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+			`Hi Oluwakemi, I found your portfolio and I'm interested in your ${title} service.\n\nProduct / link:\nWhat we need:\nTimeline:`
+		)}`;
+
 	const enquiry = (title: string) =>
 		`mailto:${CONTACT.email}?subject=${encodeURIComponent(
 			`Enquiry: ${title}`
@@ -83,13 +90,23 @@ const Services = () => {
 							</div>
 						</dl>
 
-						<a
-							href={enquiry(service.title)}
-							className="mt-8 inline-flex items-center justify-center gap-2 self-start rounded-full bg-coral px-5 py-2.5 font-sans text-sm text-cream transition-colors hover:bg-coral-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-coral"
-						>
-							<HiOutlineEnvelope className="text-base" />
-							Get a quote
-						</a>
+						<div className="mt-8 flex flex-wrap items-center gap-4">
+							<a
+								href={whatsapp(service.title)}
+								target="_blank"
+								rel="noopener noreferrer"
+								className="inline-flex items-center justify-center gap-2 rounded-full bg-coral px-5 py-2.5 font-sans text-sm text-cream transition-colors hover:bg-coral-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-coral"
+							>
+								<FaWhatsapp className="text-base" />
+								Get a quote
+							</a>
+							<a
+								href={enquiry(service.title)}
+								className="font-sans text-sm text-cream/60 underline underline-offset-4 transition-colors hover:text-coral"
+							>
+								or email
+							</a>
+						</div>
 						</div>
 					</motion.article>
 				))}
