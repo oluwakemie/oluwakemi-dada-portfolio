@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { motion, useReducedMotion } from "framer-motion";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
 import {
 	HiOutlineEnvelope,
 	HiOutlinePhone,
@@ -22,6 +22,12 @@ const CHANNELS = [
 		value: CONTACT.phoneNo,
 		href: `tel:${CONTACT.phoneNo.replace(/\s/g, "")}`,
 		icon: HiOutlinePhone,
+	},
+	{
+		label: "WhatsApp",
+		value: "Chat with me",
+		href: `https://wa.me/${CONTACT.phoneNo.replace(/\D/g, "")}`,
+		icon: FaWhatsapp,
 	},
 	{
 		label: "LinkedIn",
