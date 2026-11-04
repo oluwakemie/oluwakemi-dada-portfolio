@@ -1,11 +1,12 @@
 "use client";
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import { HiOutlineCheck, HiOutlineEnvelope } from "react-icons/hi2";
 import { FaWhatsapp } from "react-icons/fa";
 import { CONTACT, SERVICES } from "../../constants";
 
 const Services = () => {
+	const reduce = useReducedMotion();
 	const whatsappNumber = CONTACT.phoneNo.replace(/\D/g, "");
 	const whatsapp = (title: string) =>
 		`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
@@ -49,10 +50,23 @@ const Services = () => {
 				{SERVICES.map((service, index) => (
 					<motion.article
 						key={service.title}
-						whileInView={{ opacity: 1, y: 0 }}
-						initial={{ opacity: 0, y: 30 }}
-						viewport={{ once: true }}
-						transition={{ duration: 0.6, delay: index * 0.1 }}
+						whileInView={{ opacity: 1, y: 0, scale: 1 }}
+						initial={
+							reduce
+								? { opacity: 0 }
+								: { opacity: 0, y: 50, scale: 0.94 }
+						}
+						viewport={{ once: true, amount: 0.25 }}
+						transition={
+							reduce
+								? { duration: 0.4, delay: index * 0.1 }
+								: {
+										type: "spring",
+										bounce: 0.4,
+										duration: 0.8,
+										delay: index * 0.12,
+									}
+						}
 						className="flex flex-col rounded-3xl border border-forest/10 bg-forest p-8 text-cream"
 					>
 						<span className="font-sans text-sm text-cream/40">
