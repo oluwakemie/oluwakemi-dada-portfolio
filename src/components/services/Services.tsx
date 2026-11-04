@@ -41,8 +41,8 @@ const Services = () => {
 			</motion.h2>
 			<p className="mt-6 max-w-2xl text-xl font-light leading-relaxed text-forest-light">
 				I help startups and product teams ship software that works the
-				first time. Every engagement is fixed-price and agreed upfront
-				after a free 15-minute call.
+				first time. Tell me about your product, and I&rsquo;ll reply with a
+				clear plan for testing it.
 			</p>
 
 			<div className="mt-14 grid grid-cols-1 gap-6 lg:grid-cols-3">
