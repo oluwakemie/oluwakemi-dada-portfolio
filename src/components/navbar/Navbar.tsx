@@ -10,10 +10,11 @@ const NAV_LINKS = [
   { href: "#certifications", label: "Certifications" },
   { href: "#experience", label: "Experience" },
   { href: "#projects", label: "Projects" },
+  { href: "#services", label: "Services" },
   { href: "#contact", label: "Contact" },
 ];
 
-const SECTION_IDS = ["about", "skills", "certifications", "experience", "projects", "contact"];
+const SECTION_IDS = ["about", "skills", "certifications", "experience", "projects", "services", "contact"];
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
